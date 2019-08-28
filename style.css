@@ -35,7 +35,7 @@
     margin-left: 14% !important;
     padding: .4em;
 }
-.about, .work{
+.about, .work, .skills{
     letter-spacing: 1px;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -54,4 +54,36 @@
 .row{
     display: flex;
     flex-direction: column;
+}
+.progress-label{
+    width: 7em;
+    font-weight: bold;
+}
+.progress{
+    margin: 1em;
+    width: 90%;
+    transition-duration: 0.2s;
+    transition-property: width;
+    transition-timing-function: ease-in-out;
+}
+.progress:hover{
+    width: 95%;
+}
+.bg-html{
+    background-color: darkseagreen;
+}
+.bg-css{
+    
+}
+.bg-js{
+    
+}
+.bg-py{
+    
+}
+.bg-sql{
+    
+}
+.bg-django{
+    
 }
