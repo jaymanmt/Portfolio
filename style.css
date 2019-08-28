@@ -1,5 +1,14 @@
-#bg-hero{
+.container-fluid{
     background-image:url(images/hero-1.jpg);
     background-position: center;
     background-size: cover;
+    height: 500px;
+    position: absolute;
+}
+figure.header{
+    margin-left: 14% !important;
+    margin-top: 12% !important;
+    color: #e2521d;
+    letter-spacing: .2em;
+    font-family: Arial;
 }
