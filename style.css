@@ -35,3 +35,19 @@
     margin-left: 14% !important;
     padding: .4em;
 }
+.about{
+    letter-spacing: 1px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 1.3em;
+    margin-right: 1.3em;
+}
+.card-body{
+    letter-spacing: 1px;
+}
+.btn-link{
+    color: #1DADE2;
+}
+.mb-0{
+    text-align: center;
+}
