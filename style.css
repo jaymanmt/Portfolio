@@ -1,14 +1,28 @@
 .container-fluid{
+    padding: 0;
+}
+.row, .col{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.background-img{
     background-image:url(images/hero-1.jpg);
     background-position: center;
     background-size: cover;
     height: 500px;
-    position: absolute;
+    width: 100%;
 }
-figure.header{
+.background-img h1{
+    font-weight: bold;
+}
+.hero-title{
     margin-left: 14% !important;
     margin-top: 12% !important;
     color: #e2521d;
     letter-spacing: .2em;
     font-family: Arial;
+    border-left: 1px black dotted;
+    border-bottom: 1px black dotted;
+    padding: 1em;
 }
