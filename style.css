@@ -35,7 +35,7 @@
     margin-left: 14% !important;
     padding: .4em;
 }
-.about{
+.about, .work{
     letter-spacing: 1px;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -50,4 +50,8 @@
 }
 .mb-0{
     text-align: center;
+}
+.row{
+    display: flex;
+    flex-direction: column;
 }
