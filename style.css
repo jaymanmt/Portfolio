@@ -26,3 +26,12 @@
     border-bottom: 1px black dotted;
     padding: 1em;
 }
+.section-title{
+    color: #e2521d;
+    letter-spacing: .2em;
+    font-family: Arial;
+    border-left: 1px black dotted;
+    border-bottom: 1px black dotted;
+    margin-left: 14% !important;
+    padding: .4em;
+}
