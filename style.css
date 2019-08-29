@@ -6,12 +6,20 @@
     margin: 0;
     padding: 0;
 }
+.pos-f-t{
+    position: absolute;
+    z-index: 1;
+}
+.bg-dark{
+    background-color: rgba(0,0,0,0) !important;
+}
 .background-img{
     background-image:url(images/hero-1.jpg);
     background-position: center;
     background-size: cover;
     height: 500px;
     width: 100%;
+    z-index: -2;
 }
 .background-img h1{
     font-weight: bold;
@@ -105,7 +113,7 @@ form{
 .fa-linkedin:hover{
     transform:rotate(20deg);
 }
-.fa-github{
+.fa-github, .fa-linkedin{
     font-decoration: none;
     color: black;
 }
