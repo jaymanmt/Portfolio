@@ -74,7 +74,7 @@
     background-color: darkseagreen;
 }
 .bg-css{
-    
+    background-color: red;
 }
 .bg-js{
     
@@ -87,4 +87,10 @@
 }
 .bg-django{
     
+}
+.alert{
+    margin: 1em;
+}
+form{
+    margin: 1em;
 }
