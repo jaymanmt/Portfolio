@@ -25,6 +25,7 @@
     border-left: 1px black dotted;
     border-bottom: 1px black dotted;
     padding: 1em;
+    text-shadow: 0.1em 0.1em 2px black;
 }
 .section-title{
     color: #e2521d;
