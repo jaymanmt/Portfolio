@@ -94,3 +94,18 @@
 form{
     margin: 1em;
 }
+#icons{
+  position: fixed;
+  top: 0;
+  right: 0.5em;
+}
+.fa-github:hover{
+    transform:rotate(20deg);
+}
+.fa-linkedin:hover{
+    transform:rotate(20deg);
+}
+.fa-github{
+    font-decoration: none;
+    color: black;
+}
