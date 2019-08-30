@@ -13,6 +13,16 @@
 .bg-dark{
     background-color: rgba(0,0,0,0) !important;
 }
+
+@media all and (max-width:450px){
+    .p-4{
+        width: 300px !important;
+    }
+}
+}
+.navbar-toggler{
+    border: 1px rgba(0,0,0,0.3) solid !important;
+}
 .background-img{
     background-image:url(images/hero-1.jpg);
     background-position: center;
@@ -26,7 +36,7 @@
 }
 .hero-title{
     margin-left: 14% !important;
-    margin-top: 12% !important;
+    margin-top: 14% !important;
     color: #e2521d;
     letter-spacing: .2em;
     font-family: Arial;
