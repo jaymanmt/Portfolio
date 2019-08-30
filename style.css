@@ -6,6 +6,9 @@
     margin: 0;
     padding: 0;
 }
+#testing{
+    background-color: rgba(205, 213, 209, 0.2);
+}
 .pos-f-t{
     position: absolute;
     z-index: 1;
@@ -13,15 +16,16 @@
 .bg-dark{
     background-color: rgba(0,0,0,0) !important;
 }
-
+.text-muted a{
+    color: black;
+}
 @media all and (max-width:450px){
     .p-4{
         width: 300px !important;
     }
 }
-}
 .navbar-toggler{
-    border: 1px rgba(0,0,0,0.3) solid !important;
+    border: 1px rgba(0,0,0,0.4) solid !important;
 }
 .background-img{
     background-image:url(images/hero-1.jpg);
@@ -36,8 +40,8 @@
 }
 .hero-title{
     margin-left: 14% !important;
-    margin-top: 14% !important;
-    color: #e2521d;
+    margin-top: 18% !important;
+    color: #ff3e37;
     letter-spacing: .2em;
     font-family: Arial;
     border-left: 1px black dotted;
@@ -45,14 +49,16 @@
     padding: 1em;
     text-shadow: 0.1em 0.1em 2px black;
 }
+
 .section-title{
-    color: #e2521d;
+    color: #ff3e37;
     letter-spacing: .2em;
     font-family: Arial;
     border-left: 1px black dotted;
     border-bottom: 1px black dotted;
     margin-left: 14% !important;
     padding: .4em;
+    text-shadow: 1px 1px 1px black;
 }
 .about, .work, .skills{
     letter-spacing: 1px;
@@ -65,7 +71,7 @@
     letter-spacing: 1px;
 }
 .btn-link{
-    color: #1DADE2;
+    color: #5d9eff;
 }
 .mb-0{
     text-align: center;
@@ -89,22 +95,22 @@
     width: 95%;
 }
 .bg-html{
-    background-color: darkseagreen;
+    background-color: #4381c1;
 }
 .bg-css{
-    background-color: red;
+    background-color: #253c78;
 }
 .bg-js{
-    
+    background-color: #4381c1;
 }
 .bg-py{
-    
+    background-color: #253c78;
 }
 .bg-sql{
-    
+    background-color: #4381c1;
 }
 .bg-django{
-    
+    background-color: #253c78;
 }
 .alert{
     margin: 1em;
@@ -121,7 +127,7 @@ form{
     transform:rotate(20deg);
 }
 .fa-linkedin:hover{
-    transform:rotate(20deg);
+    transform:rotate(10deg);
 }
 .fa-github, .fa-linkedin{
     font-decoration: none;
