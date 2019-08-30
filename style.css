@@ -1,5 +1,7 @@
 .container-fluid{
     padding: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.2em;
 }
 .row, .col{
     width: 100%;
@@ -22,7 +24,7 @@
 .text-muted a{
     color: black;
 }
-@media all and (max-width:450px){
+@media all and (max-width:470px){
     .p-4{
         width: 300px !important;
     }
@@ -34,7 +36,7 @@
     background-image:url(images/hero-1.jpg);
     background-position: bottom;
     background-size: cover;
-    height: 500px;
+    height: 550px;
     width: 100%;
     z-index: -2;
     margin-bottom: 0;
@@ -49,25 +51,28 @@
         height: 600px;
     }
 }
-.background-img h1{
-    font-weight: bold;
-}
 .hero-title{
     margin-left: 14% !important;
     margin-top: 18% !important;
     color: #ff3e37;
     letter-spacing: .2em;
-    font-family: Arial;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     border-left: 1px black dotted;
     border-bottom: 1px black dotted;
     padding: 1em;
     text-shadow: 0.1em 0.1em 2px black;
 }
-
+.hero-title h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+.hero-title h2{
+    font-size: 2em;
+}
 .section-title{
     color: #ff3e37;
     letter-spacing: .2em;
-    font-family: Arial;
+    font-family: 'Barlow Semi Condensed', sans-serif;
     border-left: 1px black dotted;
     border-bottom: 1px black dotted;
     margin-left: 14% !important;
@@ -98,8 +103,9 @@
     flex-direction: column;
 }
 .progress-label{
-    width: 7em;
+    width: 100px;
     font-weight: bold;
+    font-size: 1.3em;
 }
 .progress{
     margin: 1em;
@@ -108,6 +114,7 @@
     transition-duration: 0.2s;
     transition-property: width;
     transition-timing-function: ease-in-out;
+    line-height: 14px;
 }
 .progress:hover{
     width: 95%;
@@ -146,12 +153,15 @@ form{
   right: 0.5em;
 }
 .fa-github:hover{
-    transform:rotate(20deg);
+    transform:rotate(10deg);
 }
 .fa-linkedin:hover{
     transform:rotate(10deg);
 }
-.fa-github, .fa-linkedin{
+.fa-file-word:hover{
+    transform:rotate(10deg);
+}
+.fa-github, .fa-linkedin, .fa-file-word{
     font-decoration: none;
     color: black;
 }
@@ -167,4 +177,5 @@ form{
 #send-deco:hover{
     background-color: #d6d5d5 !important;
     border-color: rgba(0,86,179,0.5);
+    font-family: 'Caveat', cursive;
 }
