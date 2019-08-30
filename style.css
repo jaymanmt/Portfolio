@@ -8,7 +8,6 @@
 }
 #section-coloring{
     background-color: #eaeaea;
-    padding: 1em;
 }
 .navbar-toggler-icon{
     background-image: url(images/arrow-down.jpg) !important;
@@ -33,11 +32,22 @@
 }
 .background-img{
     background-image:url(images/hero-1.jpg);
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
     height: 500px;
     width: 100%;
     z-index: -2;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition-property: height;
+    transition-duration: 1s;
+}
+@media all and (min-width:550px){
+    .background-img{
+        background-position: bottom;
+        height: 600px;
+    }
 }
 .background-img h1{
     font-weight: bold;
@@ -71,14 +81,17 @@
     margin-left: 1.3em;
     margin-right: 1.3em;
 }
+.card-header{
+    background-color: #eaeaea;
+}
 .card-body{
     letter-spacing: 1px;
 }
 .btn-link{
-    color: #5d9eff;
+    color: #4381c1;
 }
 .mb-0{
-    text-align: center;
+    text-align: left;
 }
 .row{
     display: flex;
@@ -91,6 +104,7 @@
 .progress{
     margin: 1em;
     width: 90%;
+    background-color: transparent;
     transition-duration: 0.2s;
     transition-property: width;
     transition-timing-function: ease-in-out;
@@ -143,4 +157,14 @@ form{
 }
 .form-control{
     background-color: #eaeaea !important;
+}
+#send-deco{
+    width: 6em;
+    transition-property: background-color, border-color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+}
+#send-deco:hover{
+    background-color: #d6d5d5 !important;
+    border-color: rgba(0,86,179,0.5);
 }
