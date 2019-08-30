@@ -6,8 +6,12 @@
     margin: 0;
     padding: 0;
 }
-#testing{
-    background-color: rgba(205, 213, 209, 0.2);
+#section-coloring{
+    background-color: #eaeaea;
+    padding: 1em;
+}
+.navbar-toggler-icon{
+    background-image: url(images/arrow-down.jpg) !important;
 }
 .pos-f-t{
     position: absolute;
@@ -25,7 +29,7 @@
     }
 }
 .navbar-toggler{
-    border: 1px rgba(0,0,0,0.4) solid !important;
+    border: 1px rgba(0,0,0,0) solid !important;
 }
 .background-img{
     background-image:url(images/hero-1.jpg);
@@ -115,6 +119,10 @@
 .alert{
     margin: 1em;
 }
+.alert-secondary{
+    background-color: #d6d5d5 !important;
+    border-color: rgba(0,0,0,0.2);
+}
 form{
     margin: 1em;
 }
@@ -132,4 +140,7 @@ form{
 .fa-github, .fa-linkedin{
     font-decoration: none;
     color: black;
+}
+.form-control{
+    background-color: #eaeaea !important;
 }
