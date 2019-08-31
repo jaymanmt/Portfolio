@@ -98,6 +98,9 @@ title="Flaticon">www.flaticon.com</a></div> */
     .overflow-auto{
         height: 100%;
     }
+    .form-control{
+        width: 850px;
+    }
 }
 
 .card-header{
@@ -123,7 +126,7 @@ title="Flaticon">www.flaticon.com</a></div> */
 }
 .progress{
     margin: 1em;
-    width: 90%;
+    width: 80%;
     background-color: transparent;
     transition-duration: 0.2s;
     transition-property: width;
@@ -131,7 +134,7 @@ title="Flaticon">www.flaticon.com</a></div> */
     line-height: 14px;
 }
 .progress:hover{
-    width: 95%;
+    width: 85%;
 }
 .bg-html{
     background-color: #4381c1;
@@ -155,7 +158,7 @@ title="Flaticon">www.flaticon.com</a></div> */
     margin: 1em;
 }
 .alert-secondary{
-    background-color: #d6d5d5 !important;
+    background-color: #dbe4ee !important;
     border-color: rgba(0,0,0,0.2);
 }
 form{
@@ -182,7 +185,6 @@ form{
 .form-control{
     background-color: #dbe4ee !important;
     letter-spacing: .1em;
-    border: 0.5px black solid;
     box-shadow: grey 2px 2px 5px;
 }
 #send-deco{
@@ -193,6 +195,5 @@ form{
 }
 #send-deco:hover{
     background-color: #b7cade !important;
-    border-color: rgba(0,86,179,1);
     font-family: 'Caveat', cursive;
 }

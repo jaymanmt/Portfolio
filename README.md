@@ -24,15 +24,17 @@ ID photograph: Professional Photoshoot not scheduled yet. Existing photos may du
 Technologies used:
 HTML
 CSS
-Bootstrap - includes external jquery and some javascript code 
+Bootstrap - includes external jquery and javascript code 
 
 Testing: 
 **As the main user story is to increase speed for accessing information as well as an eye-catching patterns and images to keep them interested.
 **As the ideal job is a software developer, employers will most likely be critical of webpage design and its content, thus further emphaisising the need for a range of QA testing.
 1) Mobile Responsiveness: the project is constructed with a mobile-first design. it was tested and adjusted for iPhone sizes, iPad, and desktop versions on Google Chrome and Firefox, to prevent overlay or breaking of elements. 
-2) Color Schemes: tested and chose a mix of black and grey to showcase information layers and dark orange+lightblue which are harmonious with each other to highlight prioritized information., grey, blue, with not more than 3 similar shades on content and 1 contrasting color of the headings. 
+2) Color Schemes: tested and chose a mix of white and grey spaces to showcase information sections and dark orange+lightblue which are harmonious with each other to highlight prioritized information., grey, blue, with not more than 3 similar shades on content and 1 contrasting color of the headings. 
 3) Tested all links to ensure they are working as intended. 
 4) General QA: fixed background attachments, fixed icon-panel, edited bootstrap components, hover styling, standardisation of font-family. 
+5) Text-alignments are all from the left to promote consistency of information and better portray the relatively high amounts of words in certain sections.
+6) Section alignnments are centralised in mobile devices, but on desktop, its stems from the left with symmetry coming from the technical skill progress bars and the contact me form. 
 
 Credits: 
 Hero Image: 
