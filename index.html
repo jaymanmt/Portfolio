@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" </link>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
-  <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Caveat|Montserrat&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Caveat|Montserrat&display=swap" rel="stylesheet">
   <title>Jerald Tan Portfolio</title>
 </head>
 
@@ -52,8 +52,19 @@
           <h2>About</h2>
         </header>
         <article class="about">
-          As a tertiary graduate with retail management and sales experience, I am a current student with Code Institute studying a Diploma in Software Engineering which has been enriching my knowledge of Information and Communications Technology, while equipping
-          me with the skills necessary to pursue a career in this field.
+          <div class="overflow-auto">
+            <p>My background as a nutritionist and a retail manager in Australia taught me many things ranging from evidence-based healthcare to merchandising and people management. It however did not give me the fulfillment I was longing for. I was not
+              satisfied and made hard decisions to move back to Singapore in order to pursue my existing passion in technology. As a lifelong-learner and achiever looking to succeed in the tech-space, I decided to take on a 4-month coding bootcamp with
+              Code Institute to become a Full-Stack Software Developer and quickly begin my exciting journey.</p>
+            <p>
+              Upon graduation on 6th Dec 2019, I am excited and open to commence with diversified roles in the tech-field to further explore myself and this field to the best of my ability. Connect with me on jeraldtanxh@hotmail.com or fill out the contact form below
+              and I will get back to you as soon as I can.
+            </p>
+            <p>
+              In my spare time, I am dedicated to exploring ways to use my knowledge and skills to spread awareness in the urgency and indisputable impacts of climate change. My personal goal is to effectively guide us towards a sustainable co-existence with this planet.
+              Have a look at my side projects to find out more.
+            </p>
+          </div>
         </article>
       </section>
       <section class="row" id="section-coloring">
@@ -116,12 +127,12 @@
               <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
                   <p>
-                   The coursework criteria for the Diploma in Software Development with Code Institute includes four major projects. I will upload them as I progress through my course. Stay Tuned for my uploads!
+                    The coursework criteria for the Diploma in Software Development with Code Institute includes four major projects. I will upload them as I progress through my course. Stay Tuned for my uploads!
                   </p>
-                  <i class="fas fa-unlock-alt"></i> This Portfolio (23rd Sept 2019)</br>
-                  <i class="fas fa-lock"></i> 2nd Project (14th Oct 2019)</br>
-                  <i class="fas fa-lock"></i> 3rd Project (4th Nov 2019)</br>
-                  <i class="fas fa-lock"></i> Final Project (2nd Dec 2019)
+                  <i class="fas fa-unlock-alt"></i> <a href="#">This Portfolio (23rd Sept 2019)</a></br>
+                  <i class="fas fa-lock"></i> <a href="#">2nd Project (14th Oct 2019)</a></br>
+                  <i class="fas fa-lock"></i> <a href="#">3rd Project (4th Nov 2019)</a></br>
+                  <i class="fas fa-lock"></i> <a href="#">Final Project (2nd Dec 2019)</a>
                 </div>
               </div>
             </div>
@@ -135,7 +146,15 @@
               </div>
               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="card-body">
-                  <a href="#">ascioflife</a>
+                  <h5>
+                    <a href="#" target="_blank"><u>ascioflife</u></a>
+                  </h5>
+                  <p>
+                    ascioflife is an informative blog that uses evidence-based information to educate and influence our behavioural changes in order to co-exist with the planet and its other inhabitants.
+                  </p>
+                  <p>
+                    **This webpage is a start to the many other projects I will be working on to attain my goals. Pure CSS and HTML languages were used and I will be including more features as I progress my technical skills. Stay tuned!
+                  </p>
                 </div>
               </div>
             </div>
@@ -175,23 +194,16 @@
         <article>
           <form>
             <div class="form-group">
-              <select class="form-control" id="exampleFormControlSelect1">
-      <option>-salutation-</option>
-      <option>Ms.</option>
-      <option>Mr.</option>
-    </select>
-            </div>
-            <div class="form-group">
-              <input type="name" class="form-control" placeholder="name">
+              <input type="name" class="form-control" placeholder="name" required>
             </div>
             <div class="form-group">
               <input type="number" class="form-control" placeholder="mobile(optional) - excl. country code">
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email">
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email" required>
             </div>
             <div class="form-group">
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="contact, comments, collaborations, constructive criticism welcomed"></textarea>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="contact, comments, collaborations, constructive criticism welcomed" required></textarea>
             </div>
             <div class="form-group">
               <input type="submit" id="send-deco" class="form-control" value="send">
