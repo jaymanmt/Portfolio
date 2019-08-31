@@ -49,6 +49,8 @@ title="Flaticon">www.flaticon.com</a></div> */
     background-attachment: fixed;
     transition-property: height;
     transition-duration: 1s;
+    -moz-transition-property: height;
+    -webkit-transition-property: height;
 }
 @media all and (min-width:550px){
     .background-img{
@@ -58,7 +60,7 @@ title="Flaticon">www.flaticon.com</a></div> */
 }
 .hero-title{
     margin-left: 14% !important;
-    margin-top: 18% !important;
+    margin-top: 10% !important;
     color: #ff3e37;
     letter-spacing: .2em;
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -66,9 +68,18 @@ title="Flaticon">www.flaticon.com</a></div> */
     border-bottom: 1px black dotted;
     padding: 1em;
     text-shadow: 0.1em 0.1em 2px black;
+    transition-property: margin-top;
+    transition-duration: 2s;
+    -moz-transition-property: margin-top;
+    -webkit-transition-property: margin-top;
+}
+@media all and (max-width: 550px){
+        .hero-title{
+            margin-top: 18% !important;
+    }
 }
 .hero-title h1{
-    font-size: 3em;
+    font-size: 4em;
     font-weight: bold;
 }
 .hero-title h2{
@@ -132,6 +143,8 @@ title="Flaticon">www.flaticon.com</a></div> */
     transition-property: width;
     transition-timing-function: ease-in-out;
     line-height: 14px;
+    -moz-transition-property: width;
+    -webkit-transition-property: width;
 }
 .progress:hover{
     width: 85%;
@@ -192,6 +205,8 @@ form{
     transition-property: background-color, border-color;
     transition-duration: 0.4s;
     transition-timing-function: ease-in-out;
+    -moz-transition-property: background-color, border-color;
+    -webkit-transition-property: background-color, border-color;
 }
 #send-deco:hover{
     background-color: #b7cade !important;
