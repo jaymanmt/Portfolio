@@ -1,50 +1,60 @@
-.container-fluid{
+.container-fluid {
     padding: 0;
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 1.2em;
 }
-.row, .col{
+
+.row,
+.col {
     width: 100%;
     margin: 0;
     padding: 0;
 }
-#section-coloring{
+
+#section-coloring {
     background-color: #eaeaea;
 }
-#edu{
+
+#edu {
     background-color: #eaeaea;
     text-align: center;
 }
+
 /* Nav Arrow Icon reference: <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             
 title="Flaticon">www.flaticon.com</a></div> */
-.navbar-toggler-icon{
+
+.navbar-toggler-icon {
     background-image: url(images/arrow-down.jpg) !important;
 }
 
 /*------------------ navbar----------------- */
-.pos-f-t{
+
+.pos-f-t {
     position: absolute;
     z-index: 1;
 }
-.bg-dark{
-    background-color: rgba(0,0,0,0) !important;
+
+.bg-dark {
+    background-color: rgba(0, 0, 0, 0) !important;
 }
 
-.text-muted{
-    background-color: rgba(0,0,0,0.5);
+.text-muted {
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
 }
 
-.text-muted a{
+.text-muted a {
     color: #fff;
     font-size: 1.2em;
 }
-@media all and (max-width:470px){
-    .p-4{
+
+@media all and (max-width:470px) {
+    .p-4 {
         width: 300px !important;
     }
 }
-.navbar-toggler{
+
+.navbar-toggler {
     height: 55px;
     width: 55px;
     border-radius: 100px;
@@ -55,14 +65,15 @@ title="Flaticon">www.flaticon.com</a></div> */
     transition-timing-function: ease-in-out;
 }
 
-.navbar-toggler:hover{
-    background-color: rgba(0,0,0,0.5);
+.navbar-toggler:hover {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*------------------header bg-img and hero-title----------------- */
-.background-img{
-    background-image:url(images/hero-4.jpg);
-    background-position: top;
+
+.background-img {
+    background-image: url(images/hero-4.jpg);
+    background-position: right;
     background-size: cover;
     height: 550px;
     width: 100%;
@@ -74,15 +85,31 @@ title="Flaticon">www.flaticon.com</a></div> */
     transition-duration: 1s;
     -moz-transition-property: height;
     -webkit-transition-property: height;
+    animation-name: appear;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
 }
-@media all and (min-width:550px){
-    .background-img{
+
+@keyframes appear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+        visibility: visible;
+    }
+}
+
+@media all and (min-width:550px) {
+    .background-img {
         background-position: bottom;
         height: 600px;
     }
 }
-.hero-title{
-    background-color: rgba(0,0,0,0.5);
+
+.hero-title {
+    background-color: rgba(0, 0, 0, 0.5);
     margin-left: 14% !important;
     margin-top: 10% !important;
     color: #ff3e37;
@@ -92,39 +119,43 @@ title="Flaticon">www.flaticon.com</a></div> */
     border-bottom: 1px black dotted;
     padding: 1em;
     text-shadow: 0.1em 0.1em 2px black;
-    transition-property: margin-top;
-    transition-duration: 2s;
-    -moz-transition-property: margin-top;
-    -webkit-transition-property: margin-top;
-    overflow: hidden;
-    /*
     animation-name: slide-in;
     animation-delay: 1s;
-    animation-duration: 1s;
-    animation-direction: alternate*/
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes slide-in {
-    from{left:-500px;}
-    to{left:0px;}
-}
-
-@media all and (max-width: 550px){
-        .hero-title{
-            margin-top: 18% !important;
+    from {
+        transform: translateX(1000px);
+    }
+    to {
+        transform: translateX(0px);
     }
 }
-.hero-title h1{
+
+
+@media all and (max-width: 550px) {
+    .hero-title {
+        margin-top: 18% !important;
+    }
+}
+
+.hero-title h1 {
     font-size: 4em;
     font-weight: bold;
 }
-.hero-title h2{
+
+.hero-title h2 {
     font-size: 2em;
 }
 
 /*------------------ section-titles and sections adjustments----------------- */
-.section-title{
-    background-color: rgba(0,0,0,0.2);
+
+.section-title {
+    background-color: rgba(0, 0, 0, 0.2);
     color: #ff3e37;
     letter-spacing: .2em;
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -134,24 +165,31 @@ title="Flaticon">www.flaticon.com</a></div> */
     padding: .4em;
     text-shadow: 1px 1px 1px black;
 }
-.about, .work, .skills {
+
+.about,
+.work,
+.skills {
     letter-spacing: 1px;
     padding-top: 1em;
     padding-bottom: 1em;
     margin-left: 1.3em;
     margin-right: 1.3em;
 }
-.overflow-auto{
+
+.overflow-auto {
     height: 180px;
 }
+
 @media all and (min-width: 900px) {
-    .overflow-auto{
+    .overflow-auto {
         height: 100%;
     }
-    .form-control{
+    .form-control {
         width: 850px;
     }
-    .about, .work, .skills {
+    .about,
+    .work,
+    .skills {
         padding-right: 5em;
         padding-left: 5em;
     }
@@ -165,31 +203,37 @@ title="Flaticon">www.flaticon.com</a></div> */
     }
 }
 
-.card-header{
+.card-header {
     background-color: #eaeaea;
 }
-.card-body{
+
+.card-body {
     letter-spacing: 1px;
 }
-.btn-link{
+
+.btn-link {
     color: #4381c1;
 }
-.mb-0{
+
+.mb-0 {
     text-align: left;
 }
-.row{
+
+.row {
     display: flex;
     flex-direction: column;
 }
 
 
 /*------------------ technical skills----------------- */
-.progress-label{
+
+.progress-label {
     width: 100px;
     font-weight: bold;
     font-size: 1.3em;
 }
-.progress{
+
+.progress {
     margin: 1em;
     width: 80%;
     background-color: transparent;
@@ -200,35 +244,44 @@ title="Flaticon">www.flaticon.com</a></div> */
     -moz-transition-property: width;
     -webkit-transition-property: width;
 }
-.progress:hover{
+
+.progress:hover {
     width: 85%;
 }
-.bg-html{
+
+.bg-html {
     background-color: #4381c1;
 }
-.bg-css{
+
+.bg-css {
     background-color: #253c78;
 }
-.bg-js{
+
+.bg-js {
     background-color: #4381c1;
 }
-.bg-py{
+
+.bg-py {
     background-color: #253c78;
 }
-.bg-sql{
+
+.bg-sql {
     background-color: #4381c1;
 }
-.bg-django{
+
+.bg-django {
     background-color: #253c78;
 }
 
 /*------------------ Education section----------------- */
-.alert{
+
+.alert {
     margin: 1em;
 }
-.alert-secondary{
+
+.alert-secondary {
     background-color: #dbe4ee !important;
-    border-color: rgba(0,0,0,0.2);
+    border-color: rgba(0, 0, 0, 0.2);
 }
 
 /*------------------ form----------------- */
@@ -238,19 +291,20 @@ title="Flaticon">www.flaticon.com</a></div> */
     justify-content: center;
 }
 
-form{
+form {
     margin: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.form-control{
+.form-control {
     background-color: #dbe4ee !important;
     letter-spacing: .1em;
     box-shadow: grey 2px 2px 5px;
 }
-#send-deco{
+
+#send-deco {
     width: 6em;
     transition-property: background-color, border-color;
     transition-duration: 0.4s;
@@ -258,36 +312,63 @@ form{
     -moz-transition-property: background-color, border-color;
     -webkit-transition-property: background-color, border-color;
 }
-#send-deco:hover{
+
+#send-deco:hover {
     background-color: #b7cade !important;
     font-family: 'Caveat', cursive;
 }
+
 /*------------------ icons----------------- */
 
-
-
-#icons{
-  position: fixed;
-  top: 0;
-  right: 0.5em;
-  background-color: rgba(0,0,0,0.5);
-  padding-top: 12px;
-  padding-right: 15px;
-  padding-left: 15px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+#icons {
+    position: fixed;
+    top: 0;
+    right: 0.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 12px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    animation-name: slide-down;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 }
 
-.fa-github:hover{
-    transform:rotate(10deg);
+
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-200px);
+    }
+    to {
+        transform: translateY(0px);
+    }
 }
-.fa-linkedin:hover{
-    transform:rotate(10deg);
+
+
+
+
+
+
+.fa-github:hover {
+    transform: rotate(10deg);
 }
-.fa-file-word:hover{
-    transform:rotate(10deg);
+
+.fa-linkedin:hover {
+    transform: rotate(10deg);
 }
-.fa-github, .fa-linkedin, .fa-file-word{
+
+.fa-file-word:hover {
+    transform: rotate(10deg);
+}
+
+.fa-github,
+.fa-linkedin,
+.fa-file-word {
     font-decoration: none;
     color: #eaeaea;
 }
