@@ -46,3 +46,20 @@ title="Flaticon">www.flaticon.com</a></div>
 
 Navigation Bar, Progress Bar, Project-Accordion, contact-form:
 https://getbootstrap.com/
+
+Icons: 
+https://fontawesome.com/
+
+Fonts:
+https://fonts.google.com/
+
+Javascript Icon:
+https://imgbin.com
+
+SQL logo:
+https://www.cleanpng.com/png-clip-art-microsoft-azure-sql-database-microsoft-sq-5981678/
+
+Python Logo:
+https://www.python.org/
+Django logo:
+https://www.djangoproject.com/

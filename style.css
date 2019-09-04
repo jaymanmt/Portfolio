@@ -13,12 +13,15 @@
 }
 #edu{
     background-color: #eaeaea;
+    text-align: center;
 }
 /* Nav Arrow Icon reference: <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             
 title="Flaticon">www.flaticon.com</a></div> */
 .navbar-toggler-icon{
     background-image: url(images/arrow-down.jpg) !important;
 }
+
+/*------------------ navbar----------------- */
 .pos-f-t{
     position: absolute;
     z-index: 1;
@@ -26,8 +29,15 @@ title="Flaticon">www.flaticon.com</a></div> */
 .bg-dark{
     background-color: rgba(0,0,0,0) !important;
 }
+
+.text-muted{
+    background-color: rgba(0,0,0,0.5);
+    padding: 5px;
+}
+
 .text-muted a{
-    color: black;
+    color: #fff;
+    font-size: 1.2em;
 }
 @media all and (max-width:470px){
     .p-4{
@@ -35,11 +45,24 @@ title="Flaticon">www.flaticon.com</a></div> */
     }
 }
 .navbar-toggler{
-    border: 1px rgba(0,0,0,0) solid !important;
+    height: 55px;
+    width: 55px;
+    border-radius: 100px;
+    background-color: #eaeaea;
+    border: 1px black solid !important;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
 }
+
+.navbar-toggler:hover{
+    background-color: rgba(0,0,0,0.5);
+}
+
+/*------------------header bg-img and hero-title----------------- */
 .background-img{
-    background-image:url(images/hero-1.jpg);
-    background-position: bottom;
+    background-image:url(images/hero-4.jpg);
+    background-position: top;
     background-size: cover;
     height: 550px;
     width: 100%;
@@ -59,6 +82,7 @@ title="Flaticon">www.flaticon.com</a></div> */
     }
 }
 .hero-title{
+    background-color: rgba(0,0,0,0.5);
     margin-left: 14% !important;
     margin-top: 10% !important;
     color: #ff3e37;
@@ -72,7 +96,19 @@ title="Flaticon">www.flaticon.com</a></div> */
     transition-duration: 2s;
     -moz-transition-property: margin-top;
     -webkit-transition-property: margin-top;
+    overflow: hidden;
+    /*
+    animation-name: slide-in;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-direction: alternate*/
 }
+
+@keyframes slide-in {
+    from{left:-500px;}
+    to{left:0px;}
+}
+
 @media all and (max-width: 550px){
         .hero-title{
             margin-top: 18% !important;
@@ -85,7 +121,10 @@ title="Flaticon">www.flaticon.com</a></div> */
 .hero-title h2{
     font-size: 2em;
 }
+
+/*------------------ section-titles and sections adjustments----------------- */
 .section-title{
+    background-color: rgba(0,0,0,0.2);
     color: #ff3e37;
     letter-spacing: .2em;
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -95,7 +134,7 @@ title="Flaticon">www.flaticon.com</a></div> */
     padding: .4em;
     text-shadow: 1px 1px 1px black;
 }
-.about, .work, .skills{
+.about, .work, .skills {
     letter-spacing: 1px;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -105,12 +144,24 @@ title="Flaticon">www.flaticon.com</a></div> */
 .overflow-auto{
     height: 180px;
 }
-@media all and (min-width: 900px){
+@media all and (min-width: 900px) {
     .overflow-auto{
         height: 100%;
     }
     .form-control{
         width: 850px;
+    }
+    .about, .work, .skills {
+        padding-right: 5em;
+        padding-left: 5em;
+    }
+    #edu {
+        padding-right: 5em;
+        padding-left: 5em;
+    }
+    form {
+        padding-right: 5em;
+        padding-left: 5em;
     }
 }
 
@@ -130,6 +181,9 @@ title="Flaticon">www.flaticon.com</a></div> */
     display: flex;
     flex-direction: column;
 }
+
+
+/*------------------ technical skills----------------- */
 .progress-label{
     width: 100px;
     font-weight: bold;
@@ -167,6 +221,8 @@ title="Flaticon">www.flaticon.com</a></div> */
 .bg-django{
     background-color: #253c78;
 }
+
+/*------------------ Education section----------------- */
 .alert{
     margin: 1em;
 }
@@ -174,27 +230,21 @@ title="Flaticon">www.flaticon.com</a></div> */
     background-color: #dbe4ee !important;
     border-color: rgba(0,0,0,0.2);
 }
+
+/*------------------ form----------------- */
+
+#form-contain {
+    display: flex;
+    justify-content: center;
+}
+
 form{
     margin: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#icons{
-  position: fixed;
-  top: 0;
-  right: 0.5em;
-}
-.fa-github:hover{
-    transform:rotate(10deg);
-}
-.fa-linkedin:hover{
-    transform:rotate(10deg);
-}
-.fa-file-word:hover{
-    transform:rotate(10deg);
-}
-.fa-github, .fa-linkedin, .fa-file-word{
-    font-decoration: none;
-    color: black;
-}
+
 .form-control{
     background-color: #dbe4ee !important;
     letter-spacing: .1em;
@@ -211,4 +261,33 @@ form{
 #send-deco:hover{
     background-color: #b7cade !important;
     font-family: 'Caveat', cursive;
+}
+/*------------------ icons----------------- */
+
+
+
+#icons{
+  position: fixed;
+  top: 0;
+  right: 0.5em;
+  background-color: rgba(0,0,0,0.5);
+  padding-top: 12px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.fa-github:hover{
+    transform:rotate(10deg);
+}
+.fa-linkedin:hover{
+    transform:rotate(10deg);
+}
+.fa-file-word:hover{
+    transform:rotate(10deg);
+}
+.fa-github, .fa-linkedin, .fa-file-word{
+    font-decoration: none;
+    color: #eaeaea;
 }
