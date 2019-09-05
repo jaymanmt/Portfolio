@@ -242,13 +242,13 @@ title="Flaticon">www.flaticon.com</a></div> */
 
 #section-coloring {
     background-image: url(images/skills.jpg);
-    background-position: center;
+    background-position: right;
     background-attachment: fixed;
     background-size: cover;
 }
 
 @media (max-width: 430px) {
-    .skills-bg{
+    #section-coloring{
         background-attachment: scroll;
     }
 }
