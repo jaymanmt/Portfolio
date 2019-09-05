@@ -41,6 +41,7 @@ title="Flaticon">www.flaticon.com</a></div> */
 .text-muted {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
+    border-radius: 5px;
 }
 
 .text-muted a {
@@ -48,9 +49,12 @@ title="Flaticon">www.flaticon.com</a></div> */
     font-size: 1.2em;
 }
 
-@media all and (max-width:470px) {
+@media all and (max-width:560px) {
     .p-4 {
         width: 300px !important;
+    }
+    .text-muted {
+        border-radius: 0px;
     }
 }
 
@@ -205,35 +209,16 @@ title="Flaticon">www.flaticon.com</a></div> */
     }
 }
 
-.card-header {
-    background-color: #eaeaea;
-}
-
-.card-body {
-    letter-spacing: 1px;
-}
-
-.btn-link {
-    color: #4381c1;
-}
-
-.mb-0 {
-    text-align: left;
-}
-
-.row {
-    display: flex;
-    flex-direction: column;
-}
-
-
 /*------------------ technical skills----------------- */
 
 .skills-items {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
+    min-height: 300px;
+    align-items: center;
+    
 }
 
 .skills-bg {
@@ -241,6 +226,12 @@ title="Flaticon">www.flaticon.com</a></div> */
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+}
+
+@media (max-width: 430px) {
+    .skills-bg{
+        background-attachment: scroll;
+    }
 }
 
 .skills {
@@ -282,18 +273,18 @@ title="Flaticon">www.flaticon.com</a></div> */
 
 @media all and (max-width: 420px) {
     .spin-container {
-        width: 60px;
-        height:60px;
+        width: 70px;
+        height:70px;
     }
     .item-bg {
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
     }
     .tech-img {
         width: 50px;
         height: 50px;
-        bottom: 11%;
-        right: 9%;
+        bottom: 14%;
+        right: 14%;
     }
 }
 
@@ -313,6 +304,39 @@ title="Flaticon">www.flaticon.com</a></div> */
     to {
         transform: rotate(360deg);
     }
+}
+
+/*------------------Projects section----------------- */
+
+.card-header {
+    background-color: #eaeaea;
+}
+
+.card-header:hover .btn-link {
+    background-color: grey;
+}
+
+.card-body {
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.btn-link {
+    color: #4381c1;
+}
+
+.mb-0 {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-links {
+    list-style: none;
+    text-align: center;
 }
 
 /*------------------ Education section----------------- */
@@ -378,6 +402,7 @@ form {
     animation-direction: normal;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
+    z-index: 8;
 }
 
 
@@ -411,6 +436,6 @@ form {
 .fa-github,
 .fa-linkedin,
 .fa-file-word {
-    font-decoration: none;
+    text-decoration: none;
     color: #eaeaea;
 }
