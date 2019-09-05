@@ -94,10 +94,11 @@ title="Flaticon">www.flaticon.com</a></div> */
 }
 
 @media (max-width: 430px) {
-    .background-img{
+    .background-img {
         background-attachment: scroll;
     }
 }
+
 .hero-title {
     background-color: rgba(0, 0, 0, 0.5);
     margin-left: 14% !important;
@@ -145,10 +146,26 @@ title="Flaticon">www.flaticon.com</a></div> */
 
 /*------------------ section-titles and sections adjustments----------------- */
 
-.section-title {
+.section-title-1 {
+    color: #ff3e37;
     font-size: 4em;
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+    letter-spacing: 5px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    border-left: 1px black dotted;
+    border-bottom: 1px black dotted;
+    margin-left: 14% !important;
+    padding: .4em;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* title-2 is for technical skills section*/
+
+.section-title-2 {
+    font-size: 4em;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.5);
     color: #ff3e37;
     letter-spacing: 5px;
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -157,7 +174,6 @@ title="Flaticon">www.flaticon.com</a></div> */
     margin-left: 14% !important;
     padding: .4em;
     text-shadow: 1px 1px 1px black;
-    font-variant: small-caps;
 }
 
 .about,
@@ -178,7 +194,7 @@ title="Flaticon">www.flaticon.com</a></div> */
     .overflow-auto {
         height: 100%;
     }
-    .about,
+    .about
     .work,
     .skills {
         padding-right: 5em;
@@ -199,35 +215,41 @@ title="Flaticon">www.flaticon.com</a></div> */
         width: 490px;
     }
 }
+
 @media all and (min-width: 901px) {
     .form-control {
         width: 850px;
     }
 }
+
 /*------------------ about ----------------- */
 
 .about {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition-property: display;
-    transition-duration: 3s;
-}
-
-.about img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    margin: 30px;
-    border: 5px #4381c1 solid;
 }
 
 @media all and (min-width: 600px) {
     .about {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: flex-start;
     }
 }
+
+.about img {
+    width: 200px !important;
+    height: 200px !important;
+    border-radius: 100px;
+    margin-right: 15px;
+}
+
+.about-text {
+    max-width: 800px;
+}
+
+
 /*------------------ technical skills ----------------- */
 
 .skills-items {
@@ -237,7 +259,6 @@ title="Flaticon">www.flaticon.com</a></div> */
     flex-wrap: wrap;
     min-height: 300px;
     align-items: center;
-    
 }
 
 #section-coloring {
@@ -248,22 +269,23 @@ title="Flaticon">www.flaticon.com</a></div> */
 }
 
 @media (max-width: 430px) {
-    #section-coloring{
+    #section-coloring {
         background-attachment: scroll;
     }
 }
 
 .skills {
     background-color: rgba(0, 0, 0, 0.4);
+
 }
 
 .spin-container {
-    position:relative; 
-    width:150px; 
-    height:150px;
+    position: relative;
+    width: 150px;
+    height: 150px;
 }
 
-.item-bg{
+.item-bg {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.4);
     height: 150px;
@@ -285,7 +307,7 @@ title="Flaticon">www.flaticon.com</a></div> */
     z-index: 6;
     bottom: 17%;
     right: 17%;
-    height:100px;
+    height: 100px;
     width: 100px;
     margin-top: 15px;
 }
@@ -293,7 +315,7 @@ title="Flaticon">www.flaticon.com</a></div> */
 @media all and (max-width: 420px) {
     .spin-container {
         width: 70px;
-        height:70px;
+        height: 70px;
     }
     .item-bg {
         width: 70px;
@@ -356,7 +378,7 @@ title="Flaticon">www.flaticon.com</a></div> */
 
 /*------------------ Education section----------------- */
 
-#edu-section{
+#edu-section {
     background-image: url(images/books.jpg);
     background-position: center;
     background-attachment: fixed;
@@ -364,14 +386,18 @@ title="Flaticon">www.flaticon.com</a></div> */
 }
 
 @media (max-width: 430px) {
-    #edu-section{
-        background-attachment: scroll;
+    #edu-section {
+    background-attachment: scroll;
     }
 }
 
 #edu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
+
 .alert {
     margin: 1em;
 }
@@ -379,8 +405,23 @@ title="Flaticon">www.flaticon.com</a></div> */
 .alert-secondary {
     border: 2px black solid;
     background-color: #4381c1;
+    max-width: 950px;
 }
-.alert-secondary, .alert-link {
+
+@media all and (min-width: 750px) {
+    .alert-secondary {
+        min-width: 700px;
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 749px) {
+    .alert-secondary {
+        max-width: 410px;
+    }
+}
+
+.alert-secondary,
+.alert-link {
     color: white !important;
 }
 
