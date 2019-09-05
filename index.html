@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="style.css" </link>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
   <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Caveat|Montserrat&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Jerald Tan Portfolio</title>
 </head>
 
@@ -52,6 +53,7 @@
           <h2>About</h2>
         </header>
         <article class="about">
+          <img src="images/me.jpg" alt="photo of self" />
           <div class="overflow-auto">
             <p>My background as a nutritionist and a retail manager in Australia taught me many things ranging from evidence-based healthcare to merchandising and people management. It however did not give me the fulfillment I was longing for. I was not
               satisfied and made hard decisions to move back to Singapore in order to pursue my blooming passion in technology. As a lifelong-learner and achiever looking to succeed in the tech-space, I decided to take on a 4-month coding bootcamp with
@@ -153,7 +155,7 @@
       </section>
       <section class="row" id="edu-section">
         <header class="section-title">
-            <h2>Education</h2>
+          <h2>Education</h2>
         </header>
         <article id="edu">
           <div class="alert alert-secondary" role="alert">
@@ -170,7 +172,7 @@
           </div>
           <div class="alert alert-secondary" role="alert">
             <h3> 2010</h3>
-            Diploma in Business Management <i>by</i> <a href="https://www.mdis.edu.sg/" class="alert-link" target="_blank">Management Deveopment Institute of Singapore</a>.
+            Diploma in Business Management <i>by</i> <a href="https://www.mdis.edu.sg/" class="alert-link" target="_blank">Management Development Institute of Singapore</a>.
           </div>
           <div class="alert alert-secondary" role="alert">
             <h3> 2005 - 2008</h3>
@@ -184,7 +186,7 @@
           <h2>Contact me</h2>
         </header>
         <article id="form-contain">
-          <form>
+          <form data-aos="fade-up" data-aos-delay="400" data-aos-once="true">
             <div class="form-group">
               <input type="name" class="form-control" placeholder="name" required>
             </div>
@@ -208,7 +210,7 @@
         <nav id="icons">
           <a href="https://linkedin.com/in/jerald-tan-998b6b104" target="_blank"><i class="fab fa-linkedin"></i></a>
           <a href="https://github.com/jaymanmt" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="/downloadables/resume.docx" download target="_blank"><i class="far fa-file-word"></i></a>
+          <a href="downloadables/resume.docx" download target="_blank"><i class="far fa-file-word"></i></a>
         </nav>
       </section>
     </main>
@@ -218,7 +220,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
