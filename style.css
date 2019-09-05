@@ -15,11 +15,6 @@
     background-color: #eaeaea;
 }
 
-#edu {
-    background-color: #eaeaea;
-    text-align: center;
-}
-
 /* Nav Arrow Icon reference: <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             
 title="Flaticon">www.flaticon.com</a></div> */
 
@@ -91,15 +86,6 @@ title="Flaticon">www.flaticon.com</a></div> */
     -webkit-transition-property: height;
 }
 
-@keyframes appear {
-    from{
-        opacity: 0.2;
-    }
-    to{
-        opacity:1;
-    }
-}
-
 @media all and (min-width:550px) {
     .background-img {
         background-position: bottom;
@@ -130,7 +116,6 @@ title="Flaticon">www.flaticon.com</a></div> */
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     overflow: hidden;
-    opacity: 1 !important;
 }
 
 @keyframes slide-in {
@@ -161,9 +146,11 @@ title="Flaticon">www.flaticon.com</a></div> */
 /*------------------ section-titles and sections adjustments----------------- */
 
 .section-title {
-    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 4em;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
     color: #ff3e37;
-    letter-spacing: .2em;
+    letter-spacing: 5px;
     font-family: 'Barlow Semi Condensed', sans-serif;
     border-left: 1px black dotted;
     border-bottom: 1px black dotted;
@@ -190,9 +177,6 @@ title="Flaticon">www.flaticon.com</a></div> */
     .overflow-auto {
         height: 100%;
     }
-    .form-control {
-        width: 850px;
-    }
     .about,
     .work,
     .skills {
@@ -209,19 +193,30 @@ title="Flaticon">www.flaticon.com</a></div> */
     }
 }
 
+@media all and (min-width:500px) and (max-width: 900px) {
+    .form-control {
+        width: 490px;
+    }
+}
+@media all and (min-width: 901px) {
+    .form-control {
+        width: 850px;
+    }
+}
+
 /*------------------ technical skills----------------- */
 
 .skills-items {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     min-height: 300px;
     align-items: center;
     
 }
 
-.skills-bg {
+#section-coloring {
     background-image: url(images/skills.jpg);
     background-position: center;
     background-attachment: fixed;
@@ -257,7 +252,7 @@ title="Flaticon">www.flaticon.com</a></div> */
     animation-name: spin;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    animation-direction: forwards;
+    animation-direction: normal;
     animation-timing-function: linear;
 }
 
@@ -325,10 +320,6 @@ title="Flaticon">www.flaticon.com</a></div> */
     color: #4381c1;
 }
 
-.mb-0 {
-    text-align: center;
-}
-
 .row {
     display: flex;
     flex-direction: column;
@@ -339,15 +330,30 @@ title="Flaticon">www.flaticon.com</a></div> */
     text-align: center;
 }
 
+.btn:hover {
+    background-color: grey;
+}
+
 /*------------------ Education section----------------- */
 
+#edu-section{
+    background-image: url(images/books.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#edu {
+    text-align: center;
+}
 .alert {
     margin: 1em;
 }
 
 .alert-secondary {
-    background-color: #dbe4ee !important;
-    border-color: rgba(0, 0, 0, 0.2);
+    border: 2px black solid;
+    background-color: #4381c1;
+    color: black;
 }
 
 /*------------------ form----------------- */
@@ -358,7 +364,7 @@ title="Flaticon">www.flaticon.com</a></div> */
 }
 
 form {
-    margin: 1em;
+    margin-top: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -405,8 +411,6 @@ form {
     z-index: 8;
 }
 
-
-
 @keyframes slide-down {
     from {
         transform: translateY(-200px);
@@ -415,11 +419,6 @@ form {
         transform: translateY(0px);
     }
 }
-
-
-
-
-
 
 .fa-github:hover {
     transform: rotate(10deg);
