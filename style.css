@@ -81,23 +81,19 @@ title="Flaticon">www.flaticon.com</a></div> */
     margin-bottom: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    transition-property: height;
+    transition-property: height visibility;
     transition-duration: 1s;
     -moz-transition-property: height;
     -webkit-transition-property: height;
-    animation-name: appear;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
-    animation-direction: normal;
+
 }
 
 @keyframes appear {
     from{
-        opacity: 0;
+        opacity: 0.2;
     }
     to{
         opacity:1;
-        visibility: visible;
     }
 }
 
@@ -125,6 +121,8 @@ title="Flaticon">www.flaticon.com</a></div> */
     animation-direction: normal;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
+    overflow: hidden;
+    opacity: 1 !important;
 }
 
 @keyframes slide-in {
@@ -227,42 +225,32 @@ title="Flaticon">www.flaticon.com</a></div> */
 
 /*------------------ technical skills----------------- */
 
-.progress-label {
+.skills-bg {
+    background-image: url(images/skills.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.skills {
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.item-bg {
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 130px;
+    width: 130px;
+    display: inline-block;
+    vertical-align: center;
+    border-top: 1px red solid;
+    border-radius: 100px;
+}
+
+.skills-items img{
+    height:100px;
     width: 100px;
-    font-weight: bold;
-    font-size: 1.3em;
-}
-
-.progress {
-    margin: 1em;
-    width: 80%;
-    background-color: transparent;
-    transition-duration: 0.2s;
-    transition-property: width;
-    transition-timing-function: ease-in-out;
-    line-height: 14px;
-    -moz-transition-property: width;
-    -webkit-transition-property: width;
-}
-
-.progress:hover {
-    width: 85%;
-}
-
-.bg-html {
-    background-color: #4381c1;
-}
-
-.bg-css {
-    background-color: #253c78;
-}
-
-.bg-js {
-    background-color: #4381c1;
-}
-
-.bg-py {
-    background-color: #253c78;
+    margin-top: 15px;
 }
 
 .bg-sql {

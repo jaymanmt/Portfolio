@@ -53,13 +53,17 @@ https://fontawesome.com/
 Fonts:
 https://fonts.google.com/
 
+CSS Icon:
+https://freebiesupply.com/logos/css3-logo/
+
 Javascript Icon:
-https://imgbin.com
+https://quintagroup.com/cms/js/js-image/javascript-logo.png/view
 
 SQL logo:
 https://www.cleanpng.com/png-clip-art-microsoft-azure-sql-database-microsoft-sq-5981678/
 
 Python Logo:
 https://www.python.org/
+
 Django logo:
 https://www.djangoproject.com/
