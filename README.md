@@ -22,6 +22,7 @@ Find a potential candidate for their own company/client.
 4) Scrollspy for 'about me' section: Information about myself that will make me unique and stand out from other candidates - touching on my overseas experience and personal goals. media responsive, visually lengthy text for ipad devices and smaller. Used a overflow box to reduce scrolling time for users on mobile devices. 
 5) Project-accordion: interactive design to showcase coursework and side projects allowing for drop downs and hide functionality to prevent clutter.
 6) Contact form: promote the receipt of contact to allow potential employers to leave their details. Will continue to improve the contact form as I learn JS to send the information to the database to be collected.
+7) Media Object: visual showcase of previous projects + mobile responsiveness. 
 
 ### Technologies used:
 1) HTML3
@@ -68,6 +69,3 @@ https://icon-library.net/icon/django-icon-0.html
 
 #### AOS:
 https://github.com/michalsnik/aos
-
-#### Header gradient:
-https://webgradients.com/

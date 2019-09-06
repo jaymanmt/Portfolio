@@ -190,7 +190,7 @@ title="Flaticon">www.flaticon.com</a></div> */
 }
 
 .overflow-auto {
-    height: 180px;
+    height: 250px;
 }
 
 @media all and (min-width: 900px) {
@@ -372,6 +372,7 @@ title="Flaticon">www.flaticon.com</a></div> */
     display: flex;
     flex-direction: row;
     margin: 20px;
+    border-bottom: 5px black dotted;
 }
 
 @media all and (max-width: 768px) {
