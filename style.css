@@ -107,7 +107,7 @@ title="Flaticon">www.flaticon.com</a></div> */
 .hero-title {
     background-color: rgba(0, 0, 0, 0.5);
     margin-left: 14% !important;
-    margin-top: 10% !important;
+    margin-top: 20% !important;
     color: #ff3e37;
     letter-spacing: .2em;
     font-family: 'Barlow Semi Condensed', sans-serif;
@@ -252,6 +252,7 @@ title="Flaticon">www.flaticon.com</a></div> */
     height: 200px !important;
     border-radius: 100px;
     margin-right: 15px;
+    margin-bottom: 10px;
 }
 
 .about-text {
@@ -367,8 +368,39 @@ title="Flaticon">www.flaticon.com</a></div> */
     text-align: left;
 }
 
-.btn-link {
-    color: #4381c1;
+.media {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+@media all and (max-width: 768px) {
+    .media {
+        flex-direction: column;
+    }
+}
+
+@media all and (min-width: 770px) {
+    .media img {
+        width: 400px !important;
+        height: 200px !important;
+    }
+}
+
+.media-body {
+    padding: 1em;
+}
+
+.media img {
+    width: 100%;
+    height: 100%;
+    border: 3px black solid;
+    border-radius: 5px;
+}
+
+.media-body h5 {
+    font-size: 2em;
+    text-align: center;
 }
 
 .project-links {
@@ -482,7 +514,7 @@ form {
 #icons {
     position: fixed;
     top: 0;
-    right: 0.5em;
+    right: 18%;
     background-color: rgba(0, 0, 0, 0.5);
     padding-top: 12px;
     padding-right: 15px;
