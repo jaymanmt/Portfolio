@@ -150,11 +150,8 @@ title="Flaticon">www.flaticon.com</a></div> */
     color: #ff3e37;
     font-size: 4em;
     font-weight: bold;
-    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
     letter-spacing: 5px;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    border-left: 1px black dotted;
-    border-bottom: 1px black dotted;
     margin-left: 14% !important;
     padding: .4em;
     text-shadow: 1px 1px 1px black;
@@ -355,7 +352,7 @@ title="Flaticon">www.flaticon.com</a></div> */
 
 .card-body {
     letter-spacing: 1px;
-    text-align: center;
+    text-align: left;
 }
 
 .btn-link {
@@ -369,7 +366,20 @@ title="Flaticon">www.flaticon.com</a></div> */
 
 .project-links {
     list-style: none;
-    text-align: center;
+    text-align: left;
+    font-size: .8em;
+}
+
+@media all and (min-width:767px) {
+    .project-links {
+        margin-left: 180px;
+        font-size:1em;
+    }
+}
+@media all and (min-width:900px) {
+    .project-links {
+        margin-left: 36%;
+    }
 }
 
 .btn:hover {
@@ -404,8 +414,9 @@ title="Flaticon">www.flaticon.com</a></div> */
 
 .alert-secondary {
     border: 2px black solid;
-    background-color: #4381c1;
+    background-color: rgba(0,0,0,0.8);
     max-width: 950px;
+    color: #eaeaea;
 }
 
 @media all and (min-width: 750px) {

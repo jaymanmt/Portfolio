@@ -26,14 +26,14 @@ Find a potential candidate for their own company/client.
 ### Technologies used:
 1) HTML3
 2) CSS
-3) Bootstrap 4- includes external jquery and javascript code
+3) Bootstrap 4- includes external jquery and javascript
 
 ### Testing: 
 All links open up in a new tab. Links to individual educational institutions provided and tested.
 Animations and animation on scroll working as intended. 
 Contact form "required" on all options except mobile number, form will not submit if required segments are not filled properly.  
 This site was tested on Mozila Firefox browser, Safari browser, Chrome browser.
-This site was tested on iPad, iPhone and Samsung Galaxy. 
+This site was tested on iPad, iPhone and Samsung Galaxy S9. 
 
 ### Credits: 
 #### Hero Image: 
