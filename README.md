@@ -61,10 +61,10 @@ https://quintagroup.com/cms/js/js-image/javascript-logo.png/view
 https://www.cleanpng.com/png-clip-art-microsoft-azure-sql-database-microsoft-sq-5981678/
 
 #### Python Logo:
-https://www.python.org/
+https://icons8.com/
 
 #### Django logo:
-https://www.djangoproject.com/
+https://icon-library.net/icon/django-icon-0.html
 
 #### AOS:
 https://github.com/michalsnik/aos

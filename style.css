@@ -11,6 +11,11 @@
     padding: 0;
 }
 
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
 #section-coloring {
     background-color: #eaeaea;
 }
@@ -152,9 +157,10 @@ title="Flaticon">www.flaticon.com</a></div> */
     font-weight: bold;
     letter-spacing: 5px;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    margin-left: 14% !important;
+    margin-left: 60% !important;
     padding: .4em;
     text-shadow: 1px 1px 1px black;
+    text-align: right;
 }
 
 /* title-2 is for technical skills section*/
@@ -168,8 +174,8 @@ title="Flaticon">www.flaticon.com</a></div> */
     font-family: 'Barlow Semi Condensed', sans-serif;
     border-left: 1px black dotted;
     border-bottom: 1px black dotted;
-    margin-left: 14% !important;
-    padding: .4em;
+    margin-left: 5% !important;
+    padding: .1em;
     text-shadow: 1px 1px 1px black;
 }
 
@@ -204,6 +210,12 @@ title="Flaticon">www.flaticon.com</a></div> */
     form {
         padding-right: 5em;
         padding-left: 5em;
+    }
+}
+
+@media all and (max-width: 420px) {
+    .section-title-1, .section-title-2 {
+        margin-left: 12% !important;
     }
 }
 
@@ -359,11 +371,6 @@ title="Flaticon">www.flaticon.com</a></div> */
     color: #4381c1;
 }
 
-.row {
-    display: flex;
-    flex-direction: column;
-}
-
 .project-links {
     list-style: none;
     text-align: left;
@@ -508,13 +515,13 @@ form {
     transform: rotate(10deg);
 }
 
-.fa-file-word:hover {
+.fa-arrow-circle-down:hover {
     transform: rotate(10deg);
 }
 
 .fa-github,
 .fa-linkedin,
-.fa-file-word {
+.fa-arrow-circle-down {
     text-decoration: none;
     color: #eaeaea;
 }
