@@ -2,9 +2,9 @@
 ## Project Assessment: Frontend User Development
 
 ### UX: 
-This web portfolio is primarily designed for potential employers/recruiters looking for software engineers in order to find employment after graduation from the bootcamp. 
+This web portfolio is primarily designed for potential employers/recruiters looking for software developers in order to find employment after graduation from the bootcamp. 
 Simple contrasting colors with soft background tones reduces noise for them to navigate. 
-I also provided an easy access to linkedin, github and a downloadable resume for recruiters to quickly find out more.
+I also provided easy access links to linkedin, github and a downloadable resume for recruiters to quickly find out more.
 My professional attributes which employers are looking at the most for a software development job 
 are highlighted: about(self-portrait), tech skills, projects, education. 
 The portfolio's secondary objective is to increase accessiblity and online presence for networking and collaboration purposes. 
@@ -30,11 +30,15 @@ Find a potential candidate for their own company/client.
 3) Bootstrap 4- includes external jquery and javascript
 
 ### Testing: 
-All links open up in a new tab. Links to individual educational institutions provided and tested.
-Animations and animation on scroll working as intended. 
-Contact form "required" on all options except mobile number, form will not submit if required segments are not filled properly.  
-This site was tested on Mozila Firefox browser, Safari browser, Chrome browser.
-This site was tested on iPad, iPhone and Samsung Galaxy S9. 
+- All links open up in a new tab. Links to individual educational institutions provided and tested.
+- Animations and animation on scroll working as intended. 
+- Contact form "required" on all options except mobile number, form will not submit if required segments are not filled properly.  
+- This site was tested on Mozila Firefox browser, Safari browser, Google Chrome browser, Microsoft Edge browser. No issues detected.
+- This site was tested on iPad, iPhone and Samsung Galaxy S9 devices. No issues detected.
+- When tested on the mobile responsiveness on "inspect element" function of all browsers, the fade up AOS applied on the form
+did not work as it did not allow for scrolling all the way down to activate the functionality. However, when tested on mobile 
+devices, it did not pose any problems. 
+
 
 ### Credits: 
 #### Hero Image: 
