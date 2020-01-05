@@ -42,6 +42,8 @@ title="Flaticon">www.flaticon.com</a></div> */
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
     border-radius: 5px;
+    display: flex;
+    flex-direction: row;
 }
 
 .text-muted a {
@@ -55,6 +57,7 @@ title="Flaticon">www.flaticon.com</a></div> */
     }
     .text-muted {
         border-radius: 0px;
+        flex-direction: column !important;
     }
 }
 
