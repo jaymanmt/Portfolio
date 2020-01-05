@@ -293,6 +293,7 @@ title="Flaticon">www.flaticon.com</a></div> */
     position: relative;
     width: 150px;
     height: 150px;
+    margin: 5px; 
 }
 
 .item-bg {
@@ -326,6 +327,7 @@ title="Flaticon">www.flaticon.com</a></div> */
     .spin-container {
         width: 70px;
         height: 70px;
+        
     }
     .item-bg {
         width: 70px;
